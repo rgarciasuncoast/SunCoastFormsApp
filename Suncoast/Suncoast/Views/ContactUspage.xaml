@@ -2,78 +2,101 @@
 <ContentPage Title="Contact Us" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Suncoast.ContactUspage">
     <ScrollView x:Name="ContactUspage1" Padding="15">
         <StackLayout Orientation="Vertical">
-            <Label x:Name="Header1" Text="Speak to a Specialist" TextColor="Black" FontAttributes="Bold" FontSize="18" />
-            <Label x:Name="Address1" Text="Members Contact Center" TextColor="Black" FontAttributes="None" FontSize="16" />
-            <Label x:Name="Address2" Text="Mon - Fri 7am - 8pm Eastern" TextColor="Black" FontAttributes="None" FontSize="16" />
-            <Label x:Name="Address3" Text="Sat 8am - 1pm Eastern" TextColor="Black" FontAttributes="None" FontSize="16" />
-            <StackLayout x:Name="PhoneNumberLayout" Orientation="Horizontal" HeightRequest="18">
-                <Image x:Name="PhoneNumber1" Source="ic_action_contact_phone.png" Scale="0.8" />
-                <Label x:Name="lblPhone" Text="(800) 999-5887" TextColor="#6ABBF5" FontAttributes="None" FontSize="16" />
+
+          <!-- Speak to a Specialist section  -->
+            <Label  Text="Speak to a Specialist" Style="{StaticResource HeaderLabel}" />
+            <Label  Text="Members Contact Center" Style="{StaticResource SubTitleLabel}"/>
+            <Label  Text="Mon - Fri 7am - 8pm Eastern" Style="{StaticResource SubTitleLabel}" />
+            <Label  Text="Sat 8am - 1pm Eastern" Style="{StaticResource SubTitleLabel}" />
+
+            <StackLayout x:Name="PhoneNumberLayout" Style="{StaticResource DefaultStackLayoutStyle}">
+                <Image  Source="ic_action_contact_phone.png" Scale="0.8" />
+                <Label  Text="(800) 999-5887" Style="{StaticResource SubTitleLabelwithAction}" />
             </StackLayout>
-            <StackLayout x:Name="EmailLayout" Orientation="Horizontal" HeightRequest="18">
-                <Image x:Name="Email" Source="ic_action_contact_email.png" Scale="0.8" />
-                <Label x:Name="lblEmail" Text="Send Us a Message" TextColor="#6ABBF5" FontAttributes="None" FontSize="16" />
+            
+            <StackLayout x:Name="EmailLayout" Style="{StaticResource DefaultStackLayoutStyle}">
+                <Image  Source="ic_action_contact_email.png" Scale="0.8" />
+                <Label  Text="Send Us a Message" Style="{StaticResource SubTitleLabelwithAction}" />
             </StackLayout>
-            <BoxView BackgroundColor="#D3D3D3" HeightRequest="1">
-            </BoxView>
-            <Label x:Name="Header2" Text="Report Lost and Stolen Cards" TextColor="Black" FontAttributes="Bold" FontSize="18" />
-            <Label x:Name="CreditCards" Text="Credit Cards" TextColor="Black" FontAttributes="None" FontSize="16" />
-            <StackLayout x:Name="CreditCardDetails" Orientation="Horizontal" HeightRequest="18">
-                <Image x:Name="CreditCardDetailsImage" Source="ic_action_contact_phone.png" Scale="0.8" />
-                <Label x:Name="lblCreditCards" Text="(800) 645-7728" TextColor="#6ABBF5" FontAttributes="None" FontSize="16" />
+            
+            <BoxView BackgroundColor="#D3D3D3" HeightRequest="1"/>
+         
+
+
+         <!-- Report Lost and Stolen Cards Section  -->
+            <Label  Text="Report Lost and Stolen Cards" Style="{StaticResource HeaderLabel}"  />
+            <Label  Text="Credit Cards" TextColor="Black" Style="{StaticResource SubTitleLabel}" />
+            
+            <StackLayout x:Name="CreditCardDetails" Style="{StaticResource DefaultStackLayoutStyle}">
+                <Image  Source="ic_action_contact_phone.png" Scale="0.8" />
+                <Label  Text="(800) 645-7728" Style="{StaticResource SubTitleLabelwithAction}" />
             </StackLayout>
-            <Label x:Name="DebitCards" Text="Debit/ATM Cards" TextColor="Black" FontAttributes="None" FontSize="16" />
-            <StackLayout x:Name="DebitCardDetails" Orientation="Horizontal" HeightRequest="18">
-                <Image x:Name="DebitDetailsImage" Source="ic_action_contact_phone.png" Scale="0.8" />
-                <Label x:Name="lblDebitCards" Text="(800) 999-5887" TextColor="#6ABBF5" FontAttributes="None" FontSize="16" />
+            
+            <Label  Text="Debit/ATM Cards" Style="{StaticResource SubTitleLabel}" />
+            
+            <StackLayout x:Name="DebitCardDetails" Style="{StaticResource DefaultStackLayoutStyle}">
+                <Image Source="ic_action_contact_phone.png" Scale="0.8" />
+                <Label  Text="(800) 999-5887" Style="{StaticResource SubTitleLabelwithAction}" />
             </StackLayout>
-            <Label x:Name="DebitCardsafterHours" Text="Debit/ATM Cards after hours" TextColor="Black" FontAttributes="None" FontSize="16" />
-            <StackLayout x:Name="DebitCardDetailsafterHours" Orientation="Horizontal" HeightRequest="18">
-                <Image x:Name="DebitDetailsafterHoursImage" Source="ic_action_contact_phone.png" Scale="0.8" />
-                <Label x:Name="lblDebitafterHoursCards" Text="(800) 754-4128" TextColor="#6ABBF5" FontAttributes="None" FontSize="16" />
+            
+            <Label  Text="Debit/ATM Cards after hours" Style="{StaticResource SubTitleLabel}" />
+            
+            <StackLayout x:Name="DebitCardDetailsafterHours" Style="{StaticResource DefaultStackLayoutStyle}">
+                <Image  Source="ic_action_contact_phone.png" Scale="0.8" />
+                <Label  Text="(800) 754-4128" Style="{StaticResource SubTitleLabelwithAction}" />
             </StackLayout>
-            <BoxView BackgroundColor="#D3D3D3" HeightRequest="1">
-            </BoxView>
-            <Label x:Name="EmailTechnicalSupport" Text="Email Technical Support" TextColor="Black" FontAttributes="Bold" FontSize="18" />
-            <StackLayout x:Name="EmailTechnicalSupportLayout" Orientation="Horizontal" HeightRequest="18">
-                <Image x:Name="EmailTechnicalSupportImage" Source="ic_action_contact_email.png" Scale="0.8" />
-                <Label x:Name="lblEmailTechnicalSupport" Text="digitalbanking@suncoastcreditunion.com" TextColor="#6ABBF5" FontAttributes="None" FontSize="16" />
+            <BoxView BackgroundColor="#D3D3D3" HeightRequest="1"/>
+           
+
+        <!-- Email Technical Support Section  -->
+            <Label  Text="Email Technical Support" Style="{StaticResource HeaderLabel}"  />
+            <StackLayout x:Name="EmailTechnicalSupportLayout" Style="{StaticResource DefaultStackLayoutStyle}">
+                <Image  Source="ic_action_contact_email.png" Scale="0.8" />
+                <Label  Text="digitalbanking@suncoastcreditunion.com" Style="{StaticResource SubTitleLabelwithAction}" />
             </StackLayout>
-            <BoxView BackgroundColor="#D3D3D3" HeightRequest="1">
-            </BoxView>
-            <Label x:Name="RoutingNumber" Text="Routing Number" TextColor="Black" FontAttributes="Bold" FontSize="18" />
-            <Label x:Name="Numbers" Text="263 182 817" TextColor="Black" FontAttributes="None" FontSize="16" />
-            <BoxView BackgroundColor="#D3D3D3" HeightRequest="1">
-            </BoxView>
-            <StackLayout x:Name="ATM" Orientation="Horizontal" HeightRequest="40">
-                <Image x:Name="ATMImage" Source="ic_action_place_blue.png" HorizontalOptions="Start" Scale="0.8" />
-                <Label x:Name="lblAtm" Text="   Find a Branch or ATM" HorizontalOptions="StartAndExpand" TextColor="Black" FontAttributes="None" VerticalTextAlignment="Center" FontSize="16" />
-                <Image x:Name="ListItem" Source="listitemselect.png" HorizontalOptions="EndAndExpand" Scale="0.8" />
+            <BoxView BackgroundColor="#D3D3D3" HeightRequest="1"/>
+
+        <!-- Routing Number Section  -->
+                
+            <Label Text="Routing Number" Style="{StaticResource HeaderLabel}"  />
+            <Label  Text="263 182 817" Style="{StaticResource SubTitleLabel}" />
+            <BoxView BackgroundColor="#D3D3D3" HeightRequest="1"/>
+
+
+         <!-- Clickable list Section  -->
+            <StackLayout x:Name="ATM" Style="{StaticResource ListStackLayoutStyle}">
+                <Image  Source="ic_action_place_blue.png" HorizontalOptions="Start" Scale="0.8" />
+                <Label  Text="   Find a Branch or ATM" Style="{StaticResource ListTitleLabel}" />
+                <Image  Source="listitemselect.png" HorizontalOptions="EndAndExpand" Scale="0.8" />
             </StackLayout>
-            <BoxView BackgroundColor="#D3D3D3" HeightRequest="1">
-            </BoxView>
-            <StackLayout x:Name="SunCoast" Orientation="Horizontal" HeightRequest="40">
-                <Image x:Name="SunCoastImage" Source="Icon_Small_40.png" HorizontalOptions="Start" Scale="0.8" />
-                <Label x:Name="lblSunCoast" Text="SuncoastCreditUnion.com" HorizontalOptions="StartAndExpand" TextColor="Black" VerticalTextAlignment="Center" FontAttributes="None" FontSize="16" />
-                <Image x:Name="ListItem1" Source="listitemselect.png" HorizontalOptions="EndAndExpand" Scale="0.8" />
+            
+            <BoxView BackgroundColor="#D3D3D3" HeightRequest="1"/>
+           
+            <StackLayout x:Name="SunCoast" Style="{StaticResource ListStackLayoutStyle}">
+                <Image  Source="Icon_Small_40.png" HorizontalOptions="Start" Scale="0.8" />
+                <Label  Text="SuncoastCreditUnion.com" Style="{StaticResource ListTitleLabel}" />
+                <Image  Source="listitemselect.png" HorizontalOptions="EndAndExpand" Scale="0.8" />
             </StackLayout>
-            <BoxView BackgroundColor="#D3D3D3" HeightRequest="1">
-            </BoxView>
-            <StackLayout x:Name="Facebook" Orientation="Horizontal" HeightRequest="40">
-                <Image x:Name="FacebookImage" Source="fbLogo.png" HorizontalOptions="Start" Scale="0.8" />
-                <Label x:Name="lblFacebook" Text="Suncoast Facebook Page" HorizontalOptions="StartAndExpand" TextColor="Black" VerticalTextAlignment="Center" FontAttributes="None" FontSize="16" />
-                <Image x:Name="ListItem2" Source="listitemselect.png" HorizontalOptions="EndAndExpand" Scale="0.8" />
+            
+            <BoxView BackgroundColor="#D3D3D3" HeightRequest="1"/>
+                
+           <StackLayout x:Name="Facebook" Style="{StaticResource ListStackLayoutStyle}">
+                <Image  Source="fbLogo.png" HorizontalOptions="Start" Scale="0.8" />
+                <Label  Text="Suncoast Facebook Page" Style="{StaticResource ListTitleLabel}" />
+                <Image  Source="listitemselect.png" HorizontalOptions="EndAndExpand" Scale="0.8" />
             </StackLayout>
-            <BoxView BackgroundColor="#D3D3D3" HeightRequest="1">
-            </BoxView>
-            <StackLayout x:Name="Twitter" Orientation="Horizontal" HeightRequest="40">
-                <Image x:Name="TwitterImage" Source="twitter_flat_icon.png" HorizontalOptions="Start" Scale="0.8" />
-                <Label x:Name="lblTwitter" Text="Suncoast Twitter Page" HorizontalOptions="StartAndExpand" VerticalTextAlignment="Center" TextColor="Black" FontAttributes="None" FontSize="16" />
-                <Image x:Name="ListItem3" Source="listitemselect.png" HorizontalOptions="EndAndExpand" Scale="0.8" />
+            
+            <BoxView BackgroundColor="#D3D3D3" HeightRequest="1"/>
+           
+            <StackLayout x:Name="Twitter" Style="{StaticResource ListStackLayoutStyle}">
+                <Image  Source="twitter_flat_icon.png" HorizontalOptions="Start" Scale="0.8" />
+                <Label  Text="Suncoast Twitter Page"  Style="{StaticResource ListTitleLabel}" />
+                <Image  Source="listitemselect.png" HorizontalOptions="EndAndExpand" Scale="0.8" />
             </StackLayout>
-            <BoxView BackgroundColor="#D3D3D3" HeightRequest="1">
-            </BoxView>
-            <Label x:Name="Version" Text="Version 1.0.1" TextColor="Black" FontAttributes="None" FontSize="16" />
+            
+            <BoxView BackgroundColor="#D3D3D3" HeightRequest="1"/>
+
+            <Label x:Name="Version" Text="Version 1.0.1" Style="{StaticResource SubTitleLabel}" />
         </StackLayout>
     </ScrollView>
 </ContentPage>

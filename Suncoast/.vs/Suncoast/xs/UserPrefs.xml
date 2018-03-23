@@ -1,10 +1,9 @@
-﻿<Properties StartupConfiguration="{BED75D38-ECA5-47D8-A4C1-30919FC951BC}|Default">
+﻿<Properties StartupConfiguration="{841F133A-7FAE-4949-AF72-6BCDD06F7807}|Default">
   <MonoDevelop.Ide.ItemProperties.Suncoast.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.E3839284-9C5B-42D3-8CD1-AEC5B84A2395" automaticSigning="False" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Suncoast/Views/ContactUspage.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Suncoast/App.xaml">
     <Files>
-      <File FileName="Droid/Properties/AndroidManifest.xml" Line="5" Column="12" />
-      <File FileName="Droid/MainActivity.cs" Line="25" Column="1" />
-      <File FileName="Suncoast/Views/ContactUspage.xaml" Line="79" Column="15" />
+      <File FileName="Suncoast/App.xaml" Line="46" Column="1" />
+      <File FileName="Suncoast/Views/ContactUspage.xaml" Line="16" Column="13" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.Suncoast FirstBuild="True" />
