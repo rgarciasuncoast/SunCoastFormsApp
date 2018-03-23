@@ -19,6 +19,7 @@
                 <Setter Property="FontAttributes" Value="None" />
                 <Setter Property="TextColor" Value="#6ABBF5" />
                 <Setter Property="FontSize" Value="Medium" />
+               
             </Style>
 
               <Style x:Key="ListTitleLabel" TargetType="Label">
@@ -31,7 +32,7 @@
 
             <Style x:Key="DefaultStackLayoutStyle" TargetType="StackLayout">
                 <Setter Property="Orientation" Value="Horizontal" />
-                <Setter Property="HeightRequest" Value="18" />
+             
              </Style>
 
 

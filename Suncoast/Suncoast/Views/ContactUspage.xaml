@@ -11,7 +11,7 @@
 
             <StackLayout x:Name="PhoneNumberLayout" Style="{StaticResource DefaultStackLayoutStyle}">
                 <Image  Source="ic_action_contact_phone.png" Scale="0.8" />
-                <Label  Text="(800) 999-5887" Style="{StaticResource SubTitleLabelwithAction}" />
+                <Label x:Name="lblNumber" Text="(800) 999-5887" Style="{StaticResource SubTitleLabelwithAction}" />
             </StackLayout>
             
             <StackLayout x:Name="EmailLayout" Style="{StaticResource DefaultStackLayoutStyle}">
